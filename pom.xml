@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.mosaic</groupId>
+    <groupId>com.mosaic</groupId>
     <artifactId>mosaic</artifactId>
     <version>1.0-SNAPSHOT</version>
 
@@ -18,24 +18,24 @@
         <dependency>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-jar-plugin</artifactId>
-            <version>3.3.0</version>
+            <version>3.4.1</version>
             <type>maven-plugin</type>
         </dependency>
     </dependencies>
 
     <build>
 
-        <sourceDirectory>${basedir}</sourceDirectory>
+        <sourceDirectory>${basedir}/src/com/mosaic</sourceDirectory>
 
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
+                <version>3.4.1</version>
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Main</mainClass>
+                            <mainClass>com.mosaic.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
