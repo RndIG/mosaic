@@ -1,6 +1,18 @@
 # Mosaic
 
-Mosaic will be a pet project I'll be using to learn Java
+Mosaic will be a pet project I'll be using to learn Java.
+
+This endeavor will be more about journey than destination, 
+main focus of project is to get knowledge, 
+so I expect sometime to choose path not necessary most efficient or conventional, but with clear logic of getting new (for me) skills or train some techniques.
+
+
+I will start with just retrieving weather data from free API, then processing it in some form and depending on said data gaining result which would be +/- indicator.
+### TODO list
+- Class that will be calling API, considering call frequency limitations 
+- 
+- 
+- 
 
 ## Installation
 clone repository
