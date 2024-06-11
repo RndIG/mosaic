@@ -25,13 +25,9 @@ cd mosaic
 ```
 and build
 ```
-./mvnw clean package
+mvn clean package
 ```
 
-or for windows:
-```
-mvnw.cmd clean package
-```
 
 
 ## Usage
