@@ -1,0 +1,16 @@
+{
+  "location": "41.6416, 41.6203",
+  "fields": [
+    "temperature",
+    "precipitationIntensity",
+    "precipitationProbability",
+    "precipitationType"
+  ],
+  "units": "metric",
+  "timesteps": [
+    "1h"
+  ],
+  "startTime": "now",
+  "endTime": "nowPlus3h",
+  "timezone": "auto"
+}
