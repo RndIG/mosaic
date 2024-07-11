@@ -8,13 +8,15 @@ public class Main {
 
         System.out.println("We are running..." );
 
-        Apiclienstub apistub = new Apiclienstub();
-        Weatherforecast forcastDummy = apistub.fetchforcast();
-        System.out.println(forcastDummy.getTime());
-        System.out.println(forcastDummy.getPrecipitationIntensity());
-        System.out.println(forcastDummy.getPercipitationProbability());
-        System.out.println(forcastDummy.getPercipitationType());
-        System.out.println(forcastDummy.getTemperature());
+        ApiClientStub apiStub = new ApiClientStub();
+        ApiResponse response = apiStub.fetchForcast();
+        ApiResponse.WeatherForecast forecast = response.getContent();
+
+        System.out.println(forecast.getTime());
+        System.out.println(forecast.getPrecipitationIntensity());
+        System.out.println(forecast.getPrecipitationProbability());
+        System.out.println(forecast.getPrecipitationType());
+        System.out.println(forecast.getTemperature());
 
 
     }
