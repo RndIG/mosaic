@@ -2,7 +2,7 @@ package com.mosaic;
 
 public class ApiClientStub {
 
-    public ApiResponse fetchForcast() {
+    public ApiResponse fetchForecast() {
         return new ApiResponse();
     }
 }
