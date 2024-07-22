@@ -1,7 +1,21 @@
+package com.mosaic;
+
+
 public class Main {
     public static void main(String[] args) {
-        String key = args[0];
-        System.out.println("We are running...");
+
+        System.out.println("We are running..." );
+
+        ApiClientStub apiStub = new ApiClientStub();
+        ApiResponse response = apiStub.fetchForecast();
+        WeatherForecast forecast = response.getContent();
+
+        System.out.println(forecast.startTime());
+        System.out.println(forecast.precipitationIntensity());
+        System.out.println(forecast.precipitationProbability());
+        System.out.println(forecast.precipitationType());
+        System.out.println(forecast.temperature());
+
 
     }
 }
